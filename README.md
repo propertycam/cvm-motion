@@ -12,7 +12,7 @@ on your system to build or run the service.
 
 Run this service's server with
 
-    sudo docker run cvm-motion python ./server.py
+    sudo docker run -it --rm cvm-motion python server.py
 
 Run in an ineteractive terminal
 
