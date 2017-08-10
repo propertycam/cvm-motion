@@ -13,10 +13,10 @@ _ONE_DAY_IN_SECONDS = 60 * 60 * 24
 # MotionModel implements cvm model
 class MotionModel(model_pb2_grpc.ModelServicer):
 
-  def Predict(self, predict_input, context):
+  def Predict(self, prediction_request, context):
     predicted_concept = model_pb2.Concept(name='motion', score=0.91)
-    predict_output = model_pb2.PredictOutput(concept=predicted_concept)
-    return predict_output
+    prediction_response = model_pb2.PredictionResponse(concept=predicted_concept)
+    return prediction_response
 
 # Start the server
 def serve():
