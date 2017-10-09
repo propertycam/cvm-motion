@@ -102,3 +102,6 @@ ENV/
 
 # PyCharm folders
 .idea
+
+# Output directory
+out
