@@ -18,6 +18,10 @@ Run in an ineteractive terminal
 
     sudo docker run -it --rm cvm-motion bash
 
+Run interactive terminal and share current directory
+
+    sudo docker run -it --rm -v $(pwd):/app cvm-motion bash
+
 ## How to remove images
 
 
